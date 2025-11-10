@@ -40,7 +40,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.about', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.about', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function blog_detail($slug)
     {
@@ -55,7 +56,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.blog', compact('blog', 'title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.blog', compact('blog', 'title', 'desc', 'key', 'faqSchema'));
     }
     public function contact()
     {
@@ -67,7 +69,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.content-marketing-agency', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.content-marketing-agency', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function ecommerce_seo()
     {
@@ -75,7 +78,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.e-commerce-seo', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.e-commerce-seo', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function local_seo()
     {
@@ -83,7 +87,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.local-seo', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.local-seo', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function ppc()
     {
@@ -91,7 +96,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.ppc-services', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.ppc-services', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function privacy()
     {
@@ -107,7 +113,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.seo-services', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.seo-services', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function social_media_marketing()
     {
@@ -115,7 +122,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.social-media-marketing', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.social-media-marketing', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function term()
     {
@@ -127,7 +135,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.web-design', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.web-design', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function web_development()
     {
@@ -135,7 +144,8 @@ SEO, PPC, social media, content marketing, and web development.';
         $title = $data->title ?? $this->title_default;
         $desc = $data->description ?? $this->description_default;
         $key = $data->keyword ?? $this->keyword_default;
-        return view('frontend.web-development', compact('title', 'desc', 'key'));
+        $faqSchema = $data->faq_schema ?? null;
+        return view('frontend.web-development', compact('title', 'desc', 'key', 'faqSchema'));
     }
     public function sendOtp(Request $request)
     {

@@ -44,6 +44,17 @@
     <link rel="stylesheet" href="{{ asset('public/frontend/assets/vendors/jquery-ui/jquery-ui.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/zeena.css') }}" />
     <link rel="stylesheet" href="{{ asset('public/frontend/assets/css/zeena-responsive.css') }}" />
+
+    {{-- Faq Schema --}}
+
+    @if(!empty($faqSchema))
+        <script type="application/ld+json">
+            {!! $faqSchema !!}
+        </script>
+    @endif
+
+    {{-- Faq Schema --}}
+
 </head>
 
 <body class="custom-cursor">
